@@ -1,9 +1,88 @@
+:root{
+  --color-primary: #1876f2;
+  --color-body:#efefef;
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
 }
 
 html{
   font-size: 62.5%;
+}
+body{
+  background:var(--color-body);
+}
+/* Navigation Bar*/
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background:var(--color-primary);
+  padding: 0.5rem 5rem;
+}
+.nav-left,
+.nav-right{
+  display: flex;
+  align-items: center;
+}
+.logo{
+  width: 16rem;
+  margin-right: 4.5rem;
+}
+.nav-left ul li{
+  list-style: none;
+  display: inline-block;
+  
+}
+.nav-left .icon{
+  width: 2.8rem;
+  margin: 0 1.5rem;
+}
+.nav-user img{
+  width: 4rem;
+  border-radius: 100%;
+  cursor: pointer;
+
+}
+.search-box{
+  background: var(--color-body);
+  width: 35rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  margin-right: 3rem;
+
+}
+
+.search-box img{
+  width: 1.8rem;
+}
+.search-box input{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  padding: 0 1.5rem;
+}
+
+.online{
+  position: relative;
+
+}
+.online::after{
+  content: '';
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  background: #41db51;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
