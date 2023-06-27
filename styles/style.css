@@ -2,6 +2,7 @@
   --color-primary: #1876f2;
   --color-body:#efefef;
   --color-text:  #626262;
+  --color-secondery-text: #9a9a9a;
 }
 
 *{
@@ -100,8 +101,14 @@ nav{
   padding: 1.5rem 5%;
 }
 
-.left-sidebar,
-.right-sidebar {
+.left-sidebar
+ {
+  flex-basis: 25%;
+  position: sticky;
+  top: 7rem;
+}
+.right-sidebar
+{
   flex-basis: 25%;
   position: sticky;
   top: 7rem;
@@ -295,4 +302,81 @@ nav{
   border: 0;
   width: 3.5rem;
 
+}
+
+/* Post */
+
+.post-container{
+
+  width: 100%;
+  background: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+}
+.user-profile{
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  
+}
+.user-profile img{
+  width: 4.5rem;
+  border-radius: 100%;
+  margin-right: 1.5rem;
+}
+.user-profile p{
+  font-size: 1.4rem;
+  font-weight: 500;
+
+}
+
+.post-input-container{
+  padding-right: 2rem;
+  padding-left: 8rem;
+}
+.post-input-container textarea{
+  width: 100%;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+  resize: none;
+  background: transparent;
+}
+
+.post-links{
+  display: flex;
+  padding-top: 1rem;
+}
+.post-links a{
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--color-text);
+}
+.post-input-container a img{
+  width: 2rem;
+  margin-right: 1rem;
+}
+.user-profile span{
+  color:var(--color-secondery-text);
+ 
+}
+
+.post-text{
+  font-size: 1.5rem;
+  color: var(--color-secondery-text);
+  padding-bottom: 2rem;
+}
+.post-text a{
+  text-decoration: none;
+  color: var(--color-primary);
+}
+.post-image{
+  width: 100%;
+  border-radius: 2rem;
+  margin: auto;
 }
