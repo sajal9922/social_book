@@ -101,21 +101,20 @@ nav{
   padding: 1.5rem 5%;
 }
 
-.left-sidebar
+.left-sidebar,
+.right-sidebar
  {
   flex-basis: 25%;
   position: sticky;
   top: 7rem;
+  align-self: flex-start;
 }
-.right-sidebar
-{
-  flex-basis: 25%;
-  position: sticky;
-  top: 7rem;
-}
+
 
 .main-content{
   flex-basis: 47%;
+  position: relative;
+
 }
 
 /* Left Sidebar */
@@ -318,7 +317,7 @@ nav{
 .user-profile{
   display: flex;
   align-items: center;
-  padding-bottom: 1.5rem;
+
   
 }
 .user-profile img{
@@ -369,7 +368,7 @@ nav{
 .post-text{
   font-size: 1.5rem;
   color: var(--color-secondery-text);
-  padding-bottom: 2rem;
+  padding: 1.5rem 0;
 }
 .post-text a{
   text-decoration: none;
@@ -377,6 +376,59 @@ nav{
 }
 .post-image{
   width: 100%;
-  border-radius: 2rem;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+
+}
+
+.post-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-row i{
+  font-size: 1.5rem;
+  color: var(--color-secondery-text);
+}
+.activity-icons{
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.activity-icons div img{
+  width: 1.8rem;
+  margin-right: 1rem;
+}
+.activity-icons div{
+  display: inline-flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+.post-profile-icons{
+  display: flex;
+  align-items: center;
+}
+.post-profile-icons img{
+  width: 2rem;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+
+}
+.post-profile-icons a i{
+  font-size: 1rem;
+}
+.btn-load-more{
+  display: block;
   margin: auto;
+  border: 1px solid var(--color-secondery-text);
+  border-radius: 0.5rem;
+  color: var(--color-secondery-text);
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+.footer{
+text-align: center;
+font-size: 1.3rem;
+color: var(--color-secondery-text);
+padding: 2rem ;
 }
