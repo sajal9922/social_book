@@ -32,8 +32,55 @@
           <img src="images/search.png" />
           <input type="text" placeholder="Search" />
         </div>
-        <div class="nav-user online">
+        <div class="nav-user online" onclick="settingsMenuToggle()">
           <img src="images/profile-pic.png" alt="" />
+        </div>
+      </div>
+
+      <!-- Setting Menu-->
+      <div class="settings-menu js-settings-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+        <div class="settings-menu-container">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" />
+            <div>
+              <p>John Nichoson</p>
+              <a href="#">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="images/feedback.png" />
+            <div>
+              <p>Feedback</p>
+              <a href="#">Help us to improve our disign</a>
+            </div>
+          </div>
+          <hr />
+          <div class="settings-links">
+            <img class="settings-links-icon" src="images/setting.png" />
+            <a href="#"
+              >Settings & Privecy <img src="images/arrow.png" width="7px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <img class="settings-links-icon" src="images/help.png" />
+            <a href="#"
+              >Help & Support <img src="images/arrow.png" width="7px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <img class="settings-links-icon" src="images/display.png" />
+            <a href="#"
+              >Display & accessibility <img src="images/arrow.png" width="7px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <img class="settings-links-icon" src="images/logout.png" />
+            <a href="#">Logout<img src="images/arrow.png" width="7px" /></a>
+          </div>
         </div>
       </div>
     </nav>
@@ -340,5 +387,6 @@
     <footer class="footer">
       <p>Copy Right 2023 &copy; Sajal The Awesome.</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
