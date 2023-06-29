@@ -85,6 +85,7 @@ nav{
   outline: none;
   background: transparent;
   padding: 0 1.5rem;
+  color: var(--color-secondery-text);
 }
 
 .online{
@@ -352,6 +353,7 @@ nav{
   border-bottom: 1px solid #ccc;
   resize: none;
   background: transparent;
+  color: var(--color-secondery-text);
 }
 
 .post-links{
