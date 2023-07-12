@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/abd6a2fa33.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav>
+      <div class="nav-left">
+        <img src="images/logo.png" class="logo" />
+        <ul>
+          <li><img class="icon" src="images/notification.png" /></li>
+          <li><img class="icon" src="images/inbox.png" /></li>
+          <li><img class="icon" src="images/video.png" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="nav-user online" onclick="settingsMenuToggle()">
+          <img src="images/profile-pic.png" alt="" />
+        </div>
+      </div>
+
+      <!-- Setting Menu-->
+      <div class="settings-menu js-settings-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+        <div class="settings-menu-container">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" />
+            <div>
+              <p>John Nichoson</p>
+              <a href="#">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="images/feedback.png" />
+            <div>
+              <p>Feedback</p>
+              <a href="#">Help us to improve our disign</a>
+            </div>
+          </div>
+          <hr />
+          <div class="settings-links">
+            <img class="settings-links-icon" src="images/setting.png" />
+            <a href="#"
+              >Settings & Privecy <img src="images/arrow.png" width="7px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <img class="settings-links-icon" src="images/help.png" />
+            <a href="#"
+              >Help & Support <img src="images/arrow.png" width="7px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <img class="settings-links-icon" src="images/display.png" />
+            <a href="#"
+              >Display & accessibility <img src="images/arrow.png" width="7px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <img class="settings-links-icon" src="images/logout.png" />
+            <a href="#">Logout<img src="images/arrow.png" width="7px" /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Page-->
+    <div class="profile-container">
+      <img src="images/cover.png" class="cover-image" />
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <p>Copy Right 2023 &copy; Sajal The Awesome.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
