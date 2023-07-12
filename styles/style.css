@@ -319,7 +319,7 @@ nav{
 
   width: 100%;
   background: var(--color-background);
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   padding: 2rem;
   margin-bottom: 2rem;
 
@@ -604,4 +604,106 @@ padding: 2rem ;
 }
 .profile-detail-right a img{
   width: 2rem;
+}
+
+/* Profole info*/
+
+.profile-info{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.info-column{
+  flex-basis: 33%;
+}
+.post-column{
+  flex-basis: 65%;
+}
+
+/* Profile introduction*/
+.profile-intro{
+  background: var(--color-background);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+.profile-intro h2{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.intro-text{
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0.5rem 0;
+  
+}
+
+.intro-text img{
+  height: 1.5rem;
+  margin-bottom: -0.3rem;
+}
+
+.profile-intro hr{
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 2rem 0;
+}
+
+.profile-intro ul li{
+  list-style: none;
+  font-size: 1.3rem;
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+}
+.profile-intro ul li img{
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+/* Photo Container*/
+.title-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-container a{
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.photo-container{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.photo-container div img{
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+.friend-container div{
+  position: relative;
+  padding-bottom: 1.3rem;
+}
+.friend-container div p{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Media query*/
+
+@media screen and (max-width: 900px) {
+  .left-sidebar,
+  .right-sidebar{
+    display: none;
+  }
+
+  .s
+  
 }
